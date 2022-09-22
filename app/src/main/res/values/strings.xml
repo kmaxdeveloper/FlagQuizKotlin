@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Flag Quiz</string>
+    <string name="start">Start</string>
+    <string name="app_logo_name">Flag Quiz</string>
+    <string name="back">Back</string>
+    <string name="con_button">Continue</string>
+    <string name="continentAsia">Asia</string>
+    <string name="continentEuropa">Europa</string>
+    <string name="continentAfrica">Africa</string>
+    <string name="continentNamerica">North America</string>
+    <string name="continentSamerica">South America</string>
+    <string name="continentOceania">Oceania</string>
+    <string name="continentOther">Others</string>
+    <string name="continentAbout">30 Levels</string>
+</resources>

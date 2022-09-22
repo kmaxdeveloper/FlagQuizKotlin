@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialog_asian"
+    android:background="@drawable/style"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/dialogEuropa_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dialogClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/dialog_bottom"
+            android:layout_gravity="end"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/dialogImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/dialog_asian_image" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dialogText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/dialog_asian_text"
+            android:textStyle="bold"
+            android:layout_weight="40"
+            android:textSize="24sp"
+            android:textColor="@color/black_night"
+            android:layout_marginTop="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialogContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:text="@string/con_button"
+            android:background="@drawable/dialog_bottom"
+            android:layout_weight="16"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true"
+            android:padding="20dp"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</LinearLayout>

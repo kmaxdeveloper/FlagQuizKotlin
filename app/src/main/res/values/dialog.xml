@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_asian_text"> Find the flags of the countries of the Asian continent! The quiz will last until you score 20 points!</string>
+    <string name="dialog_europa_text"> Find the flags of the countries of the European continent! The quiz will last until you score 20 points!</string>
+    <string name="dialog_africa_text"> Find the flags of the countries of the African continent! The quiz will last until you score 20 points!</string>
+    <string name="dialog_namerica_text"> Find the flags of the countries that make up the North American continent! The quiz will last until you score 20 points!</string>
+    <string name="dialog_samerica_text"> Find the flags of the countries that make up the South American continent! The quiz will last until you score 20 points!</string>
+    <string name="dialog_oceania_text"> Find the flags of the countries that make up Oceania! The quiz will last until you score 20 points!</string>
+    <string name="dialogEnd_asian_text"> Congratulations! You have taken to the next level! </string>
+</resources>
