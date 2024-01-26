@@ -2,7 +2,7 @@ package uz.kmax.flagquiz
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import uz.kmax.flagquiz.controller.FragmentController
+import uz.kmax.base.fragmentcontroller.FragmentController
 import uz.kmax.flagquiz.fragment.SplashFragment
 
 class MainActivity : AppCompatActivity() {

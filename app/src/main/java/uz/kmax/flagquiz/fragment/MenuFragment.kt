@@ -1,68 +1,61 @@
 package uz.kmax.flagquiz.fragment
 
-import android.util.Log
 import android.widget.Toast
 import androidx.core.view.setPadding
+import uz.kmax.base.basefragment.BaseFragmentWC
 import uz.kmax.flagquiz.R
 import uz.kmax.flagquiz.databinding.MenuFragmentBinding
-import uz.kmax.flagquiz.fragment.levels.*
-import uz.kmax.flagquiz.utils.SharedPref
+import uz.kmax.flagquiz.tools.other.SharedPref
 
-class MenuFragment : BaseFragment<MenuFragmentBinding>(MenuFragmentBinding::inflate) {
+class MenuFragment : BaseFragmentWC<MenuFragmentBinding>(MenuFragmentBinding::inflate) {
     private val shared by lazy { SharedPref(requireContext()) }
-    override fun onViewCreate() {
 
+    override fun onViewCreated() {
         loadView()
         binding.asian.setOnClickListener {
             if (shared.getLevel() >= 1) {
-                replaceFragment(AsianFragment())
+                replaceFragment(GameFragment(1))
             } else {
                 Toast.makeText(requireContext(), "Please Play ", Toast.LENGTH_SHORT).show()
-                Log.d("Test","Please Play Game")
             }
         }
 
         binding.europa.setOnClickListener {
             if (shared.getLevel() >= 2) {
-                replaceFragment(EuropaFragment())
+                replaceFragment(GameFragment(2))
             } else {
                 Toast.makeText(requireContext(), "Please Play ", Toast.LENGTH_SHORT).show()
-                Log.d("Test","Please Play Game")
             }
         }
 
         binding.africa.setOnClickListener {
             if (shared.getLevel() >= 3) {
-                replaceFragment(AfricaFragment())
+                replaceFragment(GameFragment(3))
             } else {
                 Toast.makeText(requireContext(), "Please Play ", Toast.LENGTH_SHORT).show()
-                Log.d("Test","Please Play Game")
             }
         }
 
         binding.NAmerica.setOnClickListener {
             if (shared.getLevel() >= 4) {
-                replaceFragment(AmericaNFragment())
+                replaceFragment(GameFragment(4))
             } else {
                 Toast.makeText(requireContext(), "Please Play ", Toast.LENGTH_SHORT).show()
-                Log.d("Test","Please Play Game")
             }
         }
 
         binding.SAmerica.setOnClickListener {
             if (shared.getLevel() >= 5) {
-                replaceFragment(AmericaSFragment())
+                replaceFragment(GameFragment(5))
             } else {
                 Toast.makeText(requireContext(), "Please Play ", Toast.LENGTH_SHORT).show()
-                Log.d("Test","Please Play Game")
             }
         }
         binding.oceania.setOnClickListener {
             if (shared.getLevel() >= 6) {
-                replaceFragment(OceaniaFragment())
+                replaceFragment(GameFragment(6))
             } else {
                 Toast.makeText(requireContext(), "Please Play ", Toast.LENGTH_SHORT).show()
-                Log.d("Test","Please Play Game")
             }
         }
     }
@@ -97,4 +90,5 @@ class MenuFragment : BaseFragment<MenuFragmentBinding>(MenuFragmentBinding::infl
             }
         }
     }
+
 }

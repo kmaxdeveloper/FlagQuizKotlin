@@ -1,4 +1,4 @@
-package uz.kmax.flagquiz.utils
+package uz.kmax.flagquiz.tools.other
 
 import android.content.Context
 import android.content.Context.MODE_PRIVATE
